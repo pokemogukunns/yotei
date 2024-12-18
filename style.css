@@ -1,0 +1,10 @@
+/* 縦方向の空白を作成 (4cm) */
+.vertical-4cm {
+    height: 4cm;
+}
+
+/* 横方向の空白を作成 (3cm) */
+.horizontal-3cm {
+    display: inline-block; /* インライン要素用 */
+    width: 3cm;
+}
