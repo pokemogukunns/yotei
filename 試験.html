@@ -10,34 +10,27 @@
             width: 794px; /* A4の幅 (210mm) */
             height: 1123px; /* A4の高さ (297mm) */
             margin: 0 auto; /* 中央寄せ */
-            padding: 20px; /* 内側に少し余白を設定 */
+            padding: 0; /* 余白なし */
             border: 1px solid #000; /* A4の枠線 */
             box-sizing: border-box; /* paddingを含めたサイズ計算 */
-            background-color: #ffffff; /* 背景色 (白) */
         }
 
-        /* 埋め込み用のiframe */
+        /* iframe のスタイル（埋め込みページをフル表示） */
         .embedded-page {
-            width: 100%; /* A4の幅に合わせる */
-            height: 800px; /* iframeの高さを調整 */
-            border: 1px solid #ddd; /* 枠線を追加 */
-        }
-
-        /* 他のページ内容のスタイル */
-        h1 {
-            text-align: center;
-            font-size: 24px;
-        }
-
-        p {
-            font-size: 16px;
+            width: 100%; /* 幅いっぱいに拡張 */
+            height: 100%; /* 高さいっぱいに拡張 */
+            border: none; /* iframeの枠線を削除 */
         }
     </style>
 </head>
 <body>
     <div class="a4-page">
         <!-- 埋め込みページ（iframe） -->
-        <iframe class="embedded-page" src="https://pokemogukunns.github.io/yotei/2.html" title="埋め込みページ"></iframe>
+        <iframe 
+            class="embedded-page" 
+            src="https://pokemogukunns.github.io/yotei/2.html" 
+            title="埋め込みページ">
+        </iframe>
     </div>
 </body>
 </html>
